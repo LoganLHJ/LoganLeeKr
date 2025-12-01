@@ -4,3 +4,5 @@
 \Users\LoganLee\.vscode\tools\Git\bin\git add .
 \Users\LoganLee\.vscode\tools\Git\bin\git commit -m "apply new homepage template"
 \Users\LoganLee\.vscode\tools\Git\bin\git push
+
+

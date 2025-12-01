@@ -12,11 +12,12 @@
       line-height: 1.6;
       background-color: #f5f5f5;
       color: #222;
+      scroll-behavior: smooth;
     }
     header {
       background: #111827;
       color: white;
-      padding: 24px 16px;
+      padding: 24px 16px 12px;
     }
     header h1 {
       margin: 0 0 8px 0;
@@ -25,6 +26,25 @@
     header p {
       margin: 0;
       opacity: 0.8;
+    }
+    .top-nav {
+      margin-top: 16px;
+      border-top: 1px solid rgba(249,250,251,0.1);
+      padding-top: 8px;
+      display: flex;
+      gap: 16px;
+      font-size: 14px;
+    }
+    .top-nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+    .top-nav a.active {
+      color: #60a5fa;
     }
     .container {
       max-width: 900px;
@@ -76,6 +96,12 @@
     <div class="container">
       <h1>Logan Lee</h1>
       <p>Biomedical Engineering / UNIST in South Korea </p>
+      <nav class="top-nav">
+        <a href="#about" class="active">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
