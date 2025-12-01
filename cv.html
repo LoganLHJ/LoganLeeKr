@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Logan Lee | CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 24px 16px 12px;
+    }
+    header h1 {
+      margin: 0 0 8px 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 0;
+      opacity: 0.8;
+    }
+    .top-nav {
+      margin-top: 16px;
+      border-top: 1px solid rgba(249,250,251,0.1);
+      padding-top: 8px;
+      display: flex;
+      gap: 16px;
+      font-size: 14px;
+    }
+    .top-nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+    .top-nav a.active {
+      color: #60a5fa;
+    }
+    .container {
+      max-width: 900px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+    section {
+      background: white;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 22px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .meta {
+      display: block;
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 2px;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+      padding: 16px 0 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Logan Lee</h1>
+      <p>Biomedical Engineering / UNIST in South Korea</p>
+      <nav class="top-nav">
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html" class="active">CV</a>
+        <a href="news.html">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Ulsan National Institute of Science and Technology (UNIST)</strong><br />
+          B.S. in Biomedical Engineering
+          <span class="meta">Ulsan, Republic of Korea · 20XX – Present</span>
+        </li>
+        <!-- 필요하면 교육 사항을 더 추가 -->
+        <!--
+        <li>
+          <strong>학교명</strong><br />
+          Degree / Major
+          <span class="meta">도시, 국가 · 연도 – 연도</span>
+        </li>
+        -->
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <strong>Data Engineer / Research Assistant</strong><br />
+          Lab / Organization name
+          <span class="meta">20XX – Present · City, Country</span>
+          <ul>
+            <li>OMICS 및 WGS 데이터를 활용한 파이프라인 구축, 전처리 및 품질 관리(QC) 수행</li>
+            <li>인구 집단 기반 유전체 데이터 분석 및 통계/머신러닝 기반 결과 해석 지원</li>
+          </ul>
+        </li>
+        <!-- 추가 경력 템플릿 -->
+        <!--
+        <li>
+          <strong>Position Title</strong><br />
+          Company / Institute
+          <span class="meta">20XX – 20XX · City, Country</span>
+          <ul>
+            <li>담당 업무 또는 성과 1</li>
+            <li>담당 업무 또는 성과 2</li>
+          </ul>
+        </li>
+        -->
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming & Data</strong>: Python, R, SQL, Linux, Shell scripting</li>
+        <li><strong>Bioinformatics</strong>: WGS/NGS 데이터 처리, 변이 호출, QC, GWAS/코호트 분석</li>
+        <li><strong>Tools & Platforms</strong>: Git, Docker, HPC/클러스터 환경, (필요시 AWS/GCP 등)</li>
+        <li><strong>Languages</strong>: Korean (Native), English (…)</li>
+      </ul>
+    </section>
+
+    <!-- Publications / Projects (선택) -->
+    <section id="publications">
+      <h2>Publications & Selected Projects</h2>
+      <ul>
+        <li>
+          <strong>Korean Standard Genome–Phenotype Data Establishment Project</strong><br />
+          Participating Researcher. Nationwide WGS cohort of the Korean population; 
+          유전체-표현형 연계 데이터 구축 및 분석 파이프라인에 기여.
+        </li>
+        <!--
+        <li>
+          <strong>논문/프로젝트 제목</strong><br />
+          간단한 설명 및 본인 기여 내용.
+        </li>
+        -->
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Logan Lee. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Logan Lee | Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 24px 16px 12px;
+    }
+    header h1 {
+      margin: 0 0 8px 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 0;
+      opacity: 0.8;
+    }
+    .top-nav {
+      margin-top: 16px;
+      border-top: 1px solid rgba(249,250,251,0.1);
+      padding-top: 8px;
+      display: flex;
+      gap: 16px;
+      font-size: 14px;
+    }
+    .top-nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+    .top-nav a.active {
+      color: #60a5fa;
+    }
+    .container {
+      max-width: 900px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+    section {
+      background: white;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 22px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .meta {
+      display: block;
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+      padding: 16px 0 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Logan Lee</h1>
+      <p>Biomedical Engineering / UNIST in South Korea</p>
+      <nav class="top-nav">
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="news.html">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Korean Standard Genome–Phenotype Data Establishment Project</strong>
+          <span class="meta">Participating researcher · Nationwide whole-genome sequencing (WGS) cohort of the Korean population</span>
+          <p>
+            대규모 한국인 유전체-표현형 데이터 구축 프로젝트에 참여하여,
+            WGS 데이터 전처리·품질관리(QC)·통합 및 분석 파이프라인 구축에 기여했습니다.
+          </p>
+        </li>
+        <li>
+          <strong>Example Project Title</strong>
+          <span class="meta">기간, 역할 (예: 2023 – Present · Data Engineer)</span>
+          <p>
+            프로젝트 요약을 한두 문장으로 작성하세요. 사용한 기술 스택(예: Python, R, Nextflow, AWS 등)과
+            본인이 담당한 핵심 역할을 간단히 정리하면 좋습니다.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Ulsan National Institute of Science and Technology (UNIST)</strong><br />
+          B.S. in Biomedical Engineering
+          <span class="meta">Ulsan, Republic of Korea · 재학 기간을 여기에 입력하세요 (예: 2021 – Present)</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Logan Lee. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

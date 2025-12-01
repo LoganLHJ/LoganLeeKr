@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Logan Lee | Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 24px 16px 12px;
+    }
+    header h1 {
+      margin: 0 0 8px 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 0;
+      opacity: 0.8;
+    }
+    .top-nav {
+      margin-top: 16px;
+      border-top: 1px solid rgba(249,250,251,0.1);
+      padding-top: 8px;
+      display: flex;
+      gap: 16px;
+      font-size: 14px;
+    }
+    .top-nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+    .top-nav a.active {
+      color: #60a5fa;
+    }
+    .container {
+      max-width: 900px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+    section {
+      background: white;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 22px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .tag {
+      display: inline-block;
+      background: #e5e7eb;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+      padding: 16px 0 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Logan Lee</h1>
+      <p>Biomedical Engineering / UNIST in South Korea</p>
+      <nav class="top-nav">
+        <a href="about.html">About</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="news.html">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Research Overview -->
+    <section id="overview">
+      <h2>Research Overview</h2>
+      <p>
+        I am interested in large-scale OMICS data analysis and biomedical informatics, 
+        with a focus on genome-wide variation, aging, and complex diseases. 
+        My work involves processing and integrating whole-genome sequencing (WGS) data, 
+        building scalable pipelines, and extracting clinically meaningful insights from population-scale cohorts.
+      </p>
+      <div>
+        <span class="tag">Genomics</span>
+        <span class="tag">Bioinformatics</span>
+        <span class="tag">OMICS Big Data</span>
+        <span class="tag">Aging & Disease</span>
+        <span class="tag">AI for Healthcare</span>
+      </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section id="interests">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>대규모 유전체(Whole-Genome Sequencing) 데이터 처리 및 품질 관리(QC) 파이프라인 구축</li>
+        <li>한국인 코호트를 기반으로 한 유전자 변이–질환/형질 연관 분석</li>
+        <li>노화(aging) 및 연령 관련 질환의 유전적 기전 규명</li>
+        <li>멀티오믹스 데이터(유전체, 전사체 등) 통합 분석을 통한 바이오마커 발굴</li>
+        <li>머신러닝/딥러닝을 활용한 질병 예측 및 리스크 모델링</li>
+      </ul>
+    </section>
+
+    <!-- Ongoing / Recent Projects -->
+    <section id="projects">
+      <h2>Ongoing & Recent Projects</h2>
+      <ul>
+        <li>
+          <strong>Korean Standard Genome–Phenotype Data Establishment Project</strong><br />
+          전국 규모 한국인 WGS 코호트 데이터를 이용하여 변이 호출, QC, 분석 파이프라인 구축 및 
+          표현형 연관 분석에 참여하고 있습니다.
+        </li>
+        <li>
+          <strong>Example Research Project</strong><br />
+          본인이 진행 중인 연구나 관심 있는 연구 주제를 한두 문장으로 요약해서 적어주세요.
+          (예: 특정 질환 코호트에서 유전적 위험 요인을 탐색하는 연구 등)
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Logan Lee. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
