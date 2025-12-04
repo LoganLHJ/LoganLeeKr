@@ -96,11 +96,29 @@
     .indent {
       text-indent: 1em;
     }
-    /* 추가: 학력·경력 보조 텍스트 스타일 */
     .edu-subtext,
     .meta {
       font-size: 0.85em;
       color: #555;
+    }
+    .skill-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skill-list li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+
+    .skill-list .dot {
+      width: 8px;
+      height: 8px;
+      background: #2563eb;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 10px;
     }
   </style>
 </head>
@@ -171,11 +189,11 @@
 
     <section id="technical-expertise">
       <h2>Technical Expertise</h2>
-      <ul>
-        <li><strong>Programming &amp; Data</strong>: Python (Primary), Linux, R</li>
-        <li><strong>Bioinformatics</strong>: WGS/RNA-seq/ChIP-seq processing &amp; QC</li>
-        <li><strong>Tools &amp; Platforms</strong>: Git, Docker, HPC environment, Conda/mamba</li>
-        <li><strong>Languages</strong>: Korean (Native), English</li>
+      <ul class="skill-list">
+        <li><span class="dot"></span>Python (Primary), Linux, R</li>
+        <li><span class="dot"></span>WGS / RNA-seq / ChIP-seq data QC</li>
+        <li><span class="dot"></span>Git, Docker, HPC environment, Conda/mamba</li>
+        <li><span class="dot"></span>Korean (Native), English</li>
       </ul>
     </section>
 
