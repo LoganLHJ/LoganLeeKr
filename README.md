@@ -29,21 +29,6 @@ I designed this site to be clean, minimal, and easy to expand as my experience g
  - Version :  Control	Git, GitHub
 
 
-📁 Repository Structure
-
-/
-
-├── index.html        # Main homepage
-
-├── assets/           # Images, icons, or other resources
-
-├── css/              # Stylesheets (if separated)
-
-├── js/               # Scripts (if used)
-
-└── README.md         # You are here!
-
-
 🚀 Roadmap / Future Improvements
  - Add detailed project pages
  - Integrate blog/TIL section
