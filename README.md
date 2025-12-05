@@ -32,9 +32,13 @@ I designed this site to be clean, minimal, and easy to expand as my experience g
 📁 Repository Structure
 /
 ├── index.html        # Main homepage
+
 ├── assets/           # Images, icons, or other resources
+
 ├── css/              # Stylesheets (if separated)
+
 ├── js/               # Scripts (if used)
+
 └── README.md         # You are here!
 
 
